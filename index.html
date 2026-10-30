@@ -2,342 +2,341 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>Catalogando Web · Sites para lojas de Instagram</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Sites para lojas de Instagram: catálogo com foto, tamanho, cor e preço, e o pedido chega pronto no seu WhatsApp. Prévia grátis e 7 dias para testar.">
-<meta property="og:title" content="Catalogando Web · Sites para lojas de Instagram">
-<meta property="og:description" content="Seu catálogo num site profissional. O pedido chega pronto no seu WhatsApp.">
-<meta property="og:image" content="img/og.png">
-<link rel="icon" href="img/simbolo.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="img/simbolo.png">
-
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Monte seu site · Catalogando Web</title>
+<link rel="icon" href="../img/simbolo.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:'Bricolage Grotesque';font-weight:700;font-display:swap;src:url('../fonts/bricolage-grotesque-700.woff2') format('woff2')}
+@font-face{font-family:'Bricolage Grotesque';font-weight:800;font-display:swap;src:url('../fonts/bricolage-grotesque-800.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-weight:400;font-display:swap;src:url('../fonts/instrument-sans-400.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-weight:500;font-display:swap;src:url('../fonts/instrument-sans-500.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-weight:600;font-display:swap;src:url('../fonts/instrument-sans-600.woff2') format('woff2')}
+:root{--fundo:#FAFAF7;--tinta:#17162B;--sutil:#5B5A70;--linha:#DCDAE8;--acento:#3A3AF0;--acento-claro:#ECEBFF;--verde:#1F8A4C;--erro:#C2362B;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:16px/1.5 'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif}
+[hidden]{display:none!important}
+.topo{display:flex;align-items:center;gap:10px;padding:16px max(16px,env(safe-area-inset-left));max-width:640px;margin:0 auto}
+.topo svg{width:32px;height:32px}
+.topo span{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:19px;letter-spacing:-.02em}
+.topo span em{font-style:normal;font-weight:700;color:var(--acento)}
+main{max-width:640px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-right)) 120px max(16px,env(safe-area-inset-left))}
+h1{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;line-height:1.08;letter-spacing:-.02em;margin:8px 0 6px;text-wrap:balance}
+.lead{color:var(--sutil);margin:0 0 18px}
+.progresso{display:flex;gap:6px;margin:4px 0 6px}
+.progresso span{flex:1;height:6px;border-radius:9px;background:var(--linha)}
+.progresso span.on{background:var(--acento)}
+.passo-rotulo{font-size:13px;font-weight:600;color:var(--sutil);margin-bottom:14px}
+.cartao{background:#fff;border:1px solid var(--linha);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:18px}
+.cartao h2{margin:0;font-family:'Bricolage Grotesque',sans-serif;font-size:22px;letter-spacing:-.01em}
+.campo{display:flex;flex-direction:column;gap:6px}
+.campo>span,.grupo-rotulo{font-weight:600;font-size:15px}
+.campo small,.dica{color:var(--sutil);font-size:13px;font-weight:400}
+input[type=text],input[type=tel],input[type=email],textarea{width:100%;min-height:50px;padding:12px 14px;border:1.5px solid var(--linha);border-radius:12px;background:#fff;font:inherit;font-size:16px;color:inherit}
+textarea{min-height:84px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--acento)}
+.campo.invalido input{border-color:var(--erro)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-flex;align-items:center;min-height:42px;padding:0 16px;border-radius:999px;border:1.5px solid var(--linha);background:#fff;font-weight:600;font-size:15px;cursor:pointer;user-select:none}
+.chips input:checked+span{background:var(--tinta);border-color:var(--tinta);color:#fff}
+.chips input:focus-visible+span{outline:3px solid var(--acento);outline-offset:2px}
+.arquivo{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.arquivo label{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 18px;border-radius:999px;border:1.5px dashed var(--acento);color:var(--acento);font-weight:600;cursor:pointer;background:var(--acento-claro)}
+.arquivo input{position:absolute;opacity:0;width:1px;height:1px}
+.arquivo .nome{font-size:14px;color:var(--sutil);word-break:break-all}
+.rodape{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--linha);padding:12px max(16px,env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+.rodape-conteudo{max-width:640px;margin:0 auto;display:flex;gap:10px;align-items:center}
+.botao{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 22px;border-radius:999px;border:1.5px solid transparent;font:inherit;font-weight:600;font-size:16px;cursor:pointer;text-decoration:none}
+.botao.principal{background:var(--acento);color:#fff;flex:1}
+.botao.voltar{background:none;border-color:var(--linha);color:var(--tinta)}
+.botao.whats{background:var(--verde);color:#fff;width:100%}
+.botao:disabled{opacity:.6;cursor:progress}
+.erro{color:var(--erro);font-weight:600;font-size:14px;margin:0}
+.fim{text-align:center;padding:40px 8px;display:flex;flex-direction:column;gap:14px;align-items:center}
+.fim .ok{width:72px;height:72px;border-radius:50%;background:var(--verde);display:grid;place-items:center}
+.fim .ok svg{width:36px;height:36px;stroke:#fff;fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.fim p{color:var(--sutil);margin:0;max-width:30em}
+:focus-visible{outline:3px solid var(--acento);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
 </head>
 <body>
-
-
-<style>@font-face{font-family:'Bricolage Grotesque';font-weight:500;font-display:swap;src:url('fonts/bricolage-grotesque-500.woff2') format('woff2')}
-@font-face{font-family:'Bricolage Grotesque';font-weight:700;font-display:swap;src:url('fonts/bricolage-grotesque-700.woff2') format('woff2')}
-@font-face{font-family:'Bricolage Grotesque';font-weight:800;font-display:swap;src:url('fonts/bricolage-grotesque-800.woff2') format('woff2')}
-@font-face{font-family:'Instrument Sans';font-weight:400;font-display:swap;src:url('fonts/instrument-sans-400.woff2') format('woff2')}
-@font-face{font-family:'Instrument Sans';font-weight:500;font-display:swap;src:url('fonts/instrument-sans-500.woff2') format('woff2')}
-@font-face{font-family:'Instrument Sans';font-weight:600;font-display:swap;src:url('fonts/instrument-sans-600.woff2') format('woff2')}
-@font-face{font-family:'DM Mono';font-weight:400;font-display:swap;src:url('fonts/dm-mono-400.woff2') format('woff2')}
-@font-face{font-family:'DM Mono';font-weight:500;font-display:swap;src:url('fonts/dm-mono-500.woff2') format('woff2')}
-html{scroll-behavior:smooth}@media(max-width:480px){.cw-contato{padding:44px 22px!important}.cw-mail{font-size:15px!important;padding:0 18px!important;max-width:100%}}
-body{margin:0;background:#FAFAF7}
-a{color:#3A3AF0}a:hover{color:#2626B8}
-h1,h2,h3{text-wrap:balance}
-</style>
-
-<div style="background: #FAFAF7; color: #17162B; font-family: 'Instrument Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.55">
-
-<header style="max-width: 1200px; margin: 0 auto; padding: 24px 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
-<div style="display: flex; align-items: center; gap: 10px">
-<svg width="36" height="36" viewBox="0 0 100 100" role="img" aria-label="Catalogando Web"><rect width="100" height="100" rx="26" fill="#3A3AF0"></rect><rect x="20" y="20" width="26" height="26" rx="7" fill="#FFFFFF"></rect><rect x="54" y="20" width="26" height="26" rx="7" fill="#FFFFFF"></rect><rect x="20" y="54" width="26" height="26" rx="7" fill="#FFFFFF"></rect><path d="M61 54h12a7 7 0 0 1 7 7v10a7 7 0 0 1-7 7h-12l-7 6v-23a7 7 0 0 1 7-7z" fill="#FFFFFF"></path><circle cx="60.5" cy="65.5" r="2.2" fill="#3A3AF0"></circle><circle cx="67" cy="65.5" r="2.2" fill="#3A3AF0"></circle><circle cx="73.5" cy="65.5" r="2.2" fill="#3A3AF0"></circle></svg>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.02em">catalogando <span style="font-weight: 500; color: #3A3AF0">web</span></span>
-</div>
-<a href="https://wa.me/5571988681966?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Catalogando%20Web%20e%20quero%20uma%20pr%C3%A9via%20gr%C3%A1tis%20da%20minha%20loja." style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 999px; background: #17162B; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 15px">Pedir minha prévia grátis</a>
+<header class="topo">
+  <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="26" fill="#3A3AF0"/><rect x="20" y="20" width="26" height="26" rx="7" fill="#fff"/><rect x="54" y="20" width="26" height="26" rx="7" fill="#fff"/><rect x="20" y="54" width="26" height="26" rx="7" fill="#fff"/><rect x="54" y="54" width="26" height="26" rx="7" fill="#fff" opacity=".55"/></svg>
+  <span>catalogando <em>web</em></span>
 </header>
 
-<section style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 96px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
-<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<span style="align-self: flex-start; font-family: 'DM Mono', monospace; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #4B4A63; border: 1px solid #DCDAE8; border-radius: 999px; padding: 6px 14px; background: #FFFFFF">Sites para lojas de Instagram</span>
-<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(40px, 4.4vw, 60px); line-height: 1.02; letter-spacing: -0.03em">Sua loja do Instagram num site que vende pelo WhatsApp.</h1>
-<p style="margin: 0; max-width: 34em; font-size: 20px; color: #4B4A63">Seus produtos organizados com foto, tamanho, cor e preço. O cliente escolhe, toca em comprar e o pedido chega pronto no seu WhatsApp. Menos tempo respondendo as mesmas perguntas na DM.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
-<a href="https://wa.me/5571988681966?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Catalogando%20Web%20e%20quero%20uma%20pr%C3%A9via%20gr%C3%A1tis%20da%20minha%20loja." style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 26px; border-radius: 999px; background: #3A3AF0; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px">Quero ver a prévia da minha loja</a>
-<a href="https://loja-teste-catalogandoweb.pages.dev/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 22px; border-radius: 999px; color: #17162B; text-decoration: none; font-weight: 600; font-size: 17px; border: 1.5px solid #17162B">Ver loja de exemplo</a>
-<a href="#planos" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 22px; border-radius: 999px; color: #17162B; text-decoration: none; font-weight: 600; font-size: 17px; text-decoration: underline; text-underline-offset: 4px">Ver planos</a>
-</div>
-<p style="margin: 0; font-size: 15px; color: #5B5A70">A Catalogando Web monta uma prévia grátis com os seus produtos, e você usa o site por 7 dias antes de pagar qualquer coisa.</p>
+<main>
+  <form id="form" novalidate>
+    <div id="cabecalho">
+      <h1>Vamos montar o site da sua loja</h1>
+      <p class="lead">Leva uns 3 minutos. Só o nome da loja e o WhatsApp são obrigatórios: o resto ajuda a deixar o site com a sua cara.</p>
+      <div class="progresso" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+      <div class="passo-rotulo" id="passo-rotulo">Passo 1 de 3</div>
+    </div>
+
+    <!-- PASSO 1 -->
+    <section class="cartao" data-passo="1">
+      <h2>Sua loja</h2>
+      <label class="campo" id="c-loja"><span>Nome da loja *</span><input type="text" name="loja" maxlength="120" autocomplete="organization" required></label>
+      <label class="campo" id="c-whats"><span>WhatsApp que recebe os pedidos *</span><input type="tel" name="whatsapp" maxlength="40" inputmode="tel" autocomplete="tel" placeholder="(71) 99999-9999" required></label>
+      <label class="campo"><span>@ do Instagram</span><input type="text" name="instagram" maxlength="80" placeholder="@sualoja" autocapitalize="off"></label>
+      <div class="campo">
+        <span class="grupo-rotulo">Como é o estilo da loja? <small>(toque em até 3)</small></span>
+        <div class="chips" data-nome="estilo" data-max="3">
+          <label><input type="checkbox" value="Delicada"><span>Delicada</span></label>
+          <label><input type="checkbox" value="Moderna"><span>Moderna</span></label>
+          <label><input type="checkbox" value="Básica"><span>Básica</span></label>
+          <label><input type="checkbox" value="Elegante"><span>Elegante</span></label>
+          <label><input type="checkbox" value="Praiana"><span>Praiana</span></label>
+          <label><input type="checkbox" value="Romântica"><span>Romântica</span></label>
+          <label><input type="checkbox" value="Despojada"><span>Despojada</span></label>
+          <label><input type="checkbox" value="Luxo"><span>Luxo</span></label>
+          <label><input type="checkbox" value="Fitness"><span>Fitness</span></label>
+        </div>
+      </div>
+      <div class="campo">
+        <span class="grupo-rotulo">Logo <small>(se não tiver, usamos a foto do Instagram)</small></span>
+        <div class="arquivo"><label><input type="file" name="logo" accept="image/*,application/pdf">Enviar logo</label><span class="nome" data-nome-de="logo"></span></div>
+      </div>
+    </section>
+
+    <!-- PASSO 2 -->
+    <section class="cartao" data-passo="2" hidden>
+      <h2>Suas peças</h2>
+      <div class="campo">
+        <span class="grupo-rotulo">Quais tamanhos você usa? <small>(pode marcar mais de um)</small></span>
+        <div class="chips" data-nome="tamanhos">
+          <label><input type="checkbox" value="PP ao GG"><span>PP ao GG</span></label>
+          <label><input type="checkbox" value="Numeração (34 ao 46)"><span>Numeração (34 ao 46)</span></label>
+          <label><input type="checkbox" value="Plus size"><span>Plus size</span></label>
+          <label><input type="checkbox" value="Tamanho único"><span>Tamanho único</span></label>
+        </div>
+      </div>
+      <div class="campo">
+        <span class="grupo-rotulo">Tabela de medidas <small>(pode ser foto)</small></span>
+        <div class="arquivo"><label><input type="file" name="tabela_medidas" accept="image/*,application/pdf">Enviar tabela</label><span class="nome" data-nome-de="tabela_medidas"></span></div>
+      </div>
+      <label class="campo"><span>Quais peças mais vendem? <small>(vão para o destaque do site)</small></span><input type="text" name="campeas" maxlength="300" placeholder="Ex.: vestido de linho, conjunto de alfaiataria"></label>
+      <div class="campo">
+        <span class="grupo-rotulo">Fotos dos produtos <small>(escolha uma)</small></span>
+        <div class="chips" data-nome="fotos" data-unico="1">
+          <label><input type="radio" name="fotos-op" value="Pode usar as fotos do Instagram"><span>Pode usar as do Instagram</span></label>
+          <label><input type="radio" name="fotos-op" value="Tenho fotos melhores, mando no WhatsApp"><span>Tenho outras, mando no WhatsApp</span></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- PASSO 3 -->
+    <section class="cartao" data-passo="3" hidden>
+      <h2>Venda e entrega</h2>
+      <div class="campo">
+        <span class="grupo-rotulo">Como você entrega? <small>(pode marcar mais de um)</small></span>
+        <div class="chips" data-nome="entrega">
+          <label><input type="checkbox" value="Entrega na cidade"><span>Entrega na cidade</span></label>
+          <label><input type="checkbox" value="Correios"><span>Correios</span></label>
+          <label><input type="checkbox" value="Retirada"><span>Retirada</span></label>
+          <label><input type="checkbox" value="Motoboy ou app"><span>Motoboy ou app</span></label>
+        </div>
+      </div>
+      <label class="campo"><span>Frete grátis a partir de <small>(opcional)</small></span><input type="text" name="frete_gratis" maxlength="60" inputmode="decimal" placeholder="Ex.: R$ 199"></label>
+      <div class="campo">
+        <span class="grupo-rotulo">Formas de pagamento <small>(pode marcar mais de uma)</small></span>
+        <div class="chips" data-nome="pagamento">
+          <label><input type="checkbox" value="Pix"><span>Pix</span></label>
+          <label><input type="checkbox" value="Cartão"><span>Cartão</span></label>
+          <label><input type="checkbox" value="Parcela sem juros"><span>Parcela sem juros</span></label>
+          <label><input type="checkbox" value="Dinheiro na entrega"><span>Dinheiro na entrega</span></label>
+        </div>
+      </div>
+      <div class="campo">
+        <span class="grupo-rotulo">Trocas <small>(escolha uma)</small></span>
+        <div class="chips" data-nome="trocas" data-unico="1">
+          <label><input type="radio" name="trocas-op" value="Até 7 dias"><span>Até 7 dias</span></label>
+          <label><input type="radio" name="trocas-op" value="Até 30 dias"><span>Até 30 dias</span></label>
+          <label><input type="radio" name="trocas-op" value="Não faço troca"><span>Não faço troca</span></label>
+        </div>
+      </div>
+      <label class="campo"><span>Qual dúvida você mais recebe na DM? <small>(opcional)</small></span><textarea name="duvidas" maxlength="1000" placeholder="Ex.: prazo de entrega, se tem no M, se aceita Pix"></textarea></label>
+      <label class="campo"><span>Quer contar mais alguma coisa? <small>(opcional)</small></span><textarea name="observacoes" maxlength="1000"></textarea></label>
+    </section>
+
+    <p class="erro" id="erro" role="alert" hidden></p>
+  </form>
+
+  <section class="fim" id="fim" hidden>
+    <div class="ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+    <h1>Recebemos!</h1>
+    <p>Já estamos montando a prévia do site da sua loja. Em até 2 dias mandamos o link no seu WhatsApp para você testar.</p>
+    <a class="botao whats" id="avisar" href="#" target="_blank" rel="noopener">Avisar no WhatsApp que enviei</a>
+  </section>
+</main>
+
+<div class="rodape" id="rodape">
+  <div class="rodape-conteudo">
+    <button class="botao voltar" type="button" id="voltar" hidden>Voltar</button>
+    <button class="botao principal" type="button" id="seguir">Continuar</button>
+  </div>
 </div>
 
-<div style="flex: 1.4 1 560px; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 28px">
-<div style="display: flex; justify-content: center; align-items: flex-start; width: 100%; max-width: 660px; padding-top: 8px">
-<div style="width: 31%; margin-top: 56px; margin-right: -5%; transform: rotate(-5deg); position: relative; z-index: 1; border-radius: 28px; background: #17162B; padding: 6px; box-shadow: 0 24px 44px -24px rgba(23,22,43,0.5)">
-<img src="img/loja-moda.jpg" alt="Vitrine do site de exemplo" style="display: block; width: 100%; height: auto; border-radius: 22px">
-</div>
-<div style="width: 36%; position: relative; z-index: 2; border-radius: 32px; background: #17162B; padding: 7px; box-shadow: 0 30px 60px -24px rgba(23,22,43,0.6)">
-<img src="img/hero-produto.jpg" alt="Página de produto com tamanho e cor" style="display: block; width: 100%; height: auto; border-radius: 25px">
-</div>
-<div style="width: 31%; margin-top: 56px; margin-left: -5%; transform: rotate(5deg); position: relative; z-index: 1; border-radius: 28px; background: #17162B; padding: 6px; box-shadow: 0 24px 44px -24px rgba(23,22,43,0.5)">
-<img src="img/hero-sacola.jpg" alt="Sacola com o pedido pronto para enviar" style="display: block; width: 100%; height: auto; border-radius: 22px">
-</div>
-</div>
-<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; width: 100%; max-width: 620px; text-align: center">
-<span style="font-size: 14px; color: #4B4A63"><strong style="display: block; font-family: 'DM Mono', monospace; font-size: 12px; color: #3A3AF0">1</strong>Escolhe na vitrine</span>
-<span style="font-size: 14px; color: #4B4A63"><strong style="display: block; font-family: 'DM Mono', monospace; font-size: 12px; color: #3A3AF0">2</strong>Seleciona tamanho e cor</span>
-<span style="font-size: 14px; color: #4B4A63"><strong style="display: block; font-family: 'DM Mono', monospace; font-size: 12px; color: #3A3AF0">3</strong>Finaliza na sacola</span>
-</div>
-<div style="width: 100%; max-width: 440px; background: #E7F5EC; border-radius: 20px; padding: 16px; display: flex; flex-direction: column; gap: 10px">
-<span style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: #145C33"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.2-4.6A9 9 0 1 1 21 12z"></path></svg>4 · O pedido chega pronto no seu WhatsApp</span>
-<div style="align-self: flex-end; max-width: 92%; background: #FFFFFF; border-radius: 14px 14px 4px 14px; padding: 12px 14px; font-size: 14px; line-height: 1.5; color: #17162B; box-shadow: 0 1px 2px rgba(0,0,0,0.08)">
-<span style="display: block">Olá, Ateliê Maré! Quero fazer um pedido:</span>
-<span style="display: block; margin-top: 6px">1x Vestido Linho Areia (Tamanho: M · Cor: Areia): R$ 129,90</span>
-<span style="display: block">1x Conjunto Céu (Tamanho: P): R$ 159,90</span>
-<span style="display: block; margin-top: 6px; font-weight: 700">Total: R$ 289,80</span>
-<span style="display: block; margin-top: 6px; color: #4B4A63">Nome: Camila · Receber: Entrega em Salvador</span>
-</div>
-</div>
-</div>
-</section>
+<script>
+(function () {
+  "use strict";
+  // Banco da Catalogando Web (chave pública: pode ficar no site).
+  var SB = { url: "https://rbysmobgayxzxbffmwtl.supabase.co", chave: "sb_publishable_ehLqSsz3keEINhpKOAfOXA_JtPO2x51" };
+  var WHATS_CATALOGANDO = "5571988681966";
+  var RASCUNHO = "briefing:rascunho";
 
-<section style="background: #FFFFFF; border-top: 1px solid #ECEBF2; border-bottom: 1px solid #ECEBF2">
-<div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
-<span style="font-family: 'DM Mono', monospace; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #5B5A70">Profissionalismo e visibilidade</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; letter-spacing: -0.02em">Saia do “chama na DM” e transforme sua loja em marca.</h2>
-<p style="margin: 0; color: #4B4A63; max-width: 36em">Um site próprio deixa sua loja mais profissional, mais fácil de encontrar e mais segura para quem ainda não te conhece.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 20px">
-<div style="background: #F4F3F8; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 24px; font-weight: 700; color: #4B4A63">Só no Instagram</h3>
-<span style="display: flex; gap: 12px; align-items: flex-start; font-size: 17px; color: #4B4A63"><span style="flex: none; width: 22px; height: 22px; border-radius: 999px; background: #E4E3EC; color: #5B5A70; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700">✕</span>Preço escondido no “chama na DM”</span>
-<span style="display: flex; gap: 12px; align-items: flex-start; font-size: 17px; color: #4B4A63"><span style="flex: none; width: 22px; height: 22px; border-radius: 999px; background: #E4E3EC; color: #5B5A70; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700">✕</span>As mesmas perguntas o dia inteiro</span>
-<span style="display: flex; gap: 12px; align-items: flex-start; font-size: 17px; color: #4B4A63"><span style="flex: none; width: 22px; height: 22px; border-radius: 999px; background: #E4E3EC; color: #5B5A70; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700">✕</span>Cliente novo pode desconfiar de perfil sem site</span>
-<span style="display: flex; gap: 12px; align-items: flex-start; font-size: 17px; color: #4B4A63"><span style="flex: none; width: 22px; height: 22px; border-radius: 999px; background: #E4E3EC; color: #5B5A70; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700">✕</span>Link na bio genérico, igual ao de todo mundo</span>
-<span style="display: flex; gap: 12px; align-items: flex-start; font-size: 17px; color: #4B4A63"><span style="flex: none; width: 22px; height: 22px; border-radius: 999px; background: #E4E3EC; color: #5B5A70; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700">✕</span>O alcance depende do algoritmo</span>
-</div>
-<div style="background: #FFFFFF; border: 2px solid #3A3AF0; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 24px 48px -28px rgba(58,58,240,0.45)">
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 24px; font-weight: 700">Com o seu site</h3>
-<span style="display: flex; gap: 12px; align-items: flex-start; font-size: 17px; color: #17162B"><span style="flex: none; width: 22px; height: 22px; border-radius: 999px; background: #1F8A4C; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700">✓</span>Vitrine com fotos, preços e tamanhos à vista</span>
-<span style="display: flex; gap: 12px; align-items: flex-start; font-size: 17px; color: #17162B"><span style="flex: none; width: 22px; height: 22px; border-radius: 999px; background: #1F8A4C; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700">✓</span>Pedido pronto chegando no seu WhatsApp</span>
-<span style="display: flex; gap: 12px; align-items: flex-start; font-size: 17px; color: #17162B"><span style="flex: none; width: 22px; height: 22px; border-radius: 999px; background: #1F8A4C; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700">✓</span>Endereço próprio: suamarca.com.br</span>
-<span style="display: flex; gap: 12px; align-items: flex-start; font-size: 17px; color: #17162B"><span style="flex: none; width: 22px; height: 22px; border-radius: 999px; background: #1F8A4C; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700">✓</span>Um link para divulgar onde quiser, inclusive no Google</span>
-<span style="display: flex; gap: 12px; align-items: flex-start; font-size: 17px; color: #17162B"><span style="flex: none; width: 22px; height: 22px; border-radius: 999px; background: #1F8A4C; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700">✓</span>Imagem mais profissional, que passa confiança</span>
-</div>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 10px 12px; align-items: center">
-<span style="font-size: 16px; font-weight: 600; margin-right: 4px">Seu link pode estar em:</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: #ECEBFF; color: #2626B8; font-size: 15px; font-weight: 600">Bio do Instagram</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: #ECEBFF; color: #2626B8; font-size: 15px; font-weight: 600">Google</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: #ECEBFF; color: #2626B8; font-size: 15px; font-weight: 600">Status do WhatsApp</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: #ECEBFF; color: #2626B8; font-size: 15px; font-weight: 600">QR code na embalagem</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: #ECEBFF; color: #2626B8; font-size: 15px; font-weight: 600">Cartão de visita</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: #ECEBFF; color: #2626B8; font-size: 15px; font-weight: 600">Anúncios</span>
-</div>
-</div>
-</section>
+  var $ = function (id) { return document.getElementById(id); };
+  var form = $("form");
+  var passo = 1;
+  var TOTAL = 3;
 
-<section style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
-<div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
-<span style="font-family: 'DM Mono', monospace; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #5B5A70">Para todo tipo de loja</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; letter-spacing: -0.02em">Um site com a cara da sua loja, seja qual for o nicho.</h2>
-<p style="margin: 0; color: #4B4A63; max-width: 36em">Cores, fontes, categorias e produtos do jeito da sua marca. Veja seis lojas de exemplo montadas com o mesmo sistema, cada uma com a sua identidade.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 48px 24px">
-<figure style="margin: 0; display: flex; flex-direction: column; align-items: center; gap: 14px">
-<div style="width: 100%; max-width: 270px; border-radius: 34px; background: #17162B; padding: 9px; box-shadow: 0 28px 50px -30px rgba(23,22,43,0.55)">
-<img src="img/loja-moda.jpg" alt="Site de exemplo da loja Ateliê Maré" style="display: block; width: 100%; height: auto; border-radius: 26px">
-</div>
-<figcaption style="display: flex; flex-direction: column; align-items: center; gap: 2px">
-<span style="font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5B5A70">Moda</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 20px; font-weight: 700">Ateliê Maré</span>
-</figcaption>
-</figure>
-<figure style="margin: 0; display: flex; flex-direction: column; align-items: center; gap: 14px">
-<div style="width: 100%; max-width: 270px; border-radius: 34px; background: #17162B; padding: 9px; box-shadow: 0 28px 50px -30px rgba(23,22,43,0.55)">
-<img src="img/loja-pet.jpg" alt="Site de exemplo da loja Patinha Feliz" style="display: block; width: 100%; height: auto; border-radius: 26px">
-</div>
-<figcaption style="display: flex; flex-direction: column; align-items: center; gap: 2px">
-<span style="font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5B5A70">Pet</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 20px; font-weight: 700">Patinha Feliz</span>
-</figcaption>
-</figure>
-<figure style="margin: 0; display: flex; flex-direction: column; align-items: center; gap: 14px">
-<div style="width: 100%; max-width: 270px; border-radius: 34px; background: #17162B; padding: 9px; box-shadow: 0 28px 50px -30px rgba(23,22,43,0.55)">
-<img src="img/loja-esporte.jpg" alt="Site de exemplo da loja Saque Store" style="display: block; width: 100%; height: auto; border-radius: 26px">
-</div>
-<figcaption style="display: flex; flex-direction: column; align-items: center; gap: 2px">
-<span style="font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5B5A70">Esporte</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 20px; font-weight: 700">Saque Store</span>
-</figcaption>
-</figure>
-<figure style="margin: 0; display: flex; flex-direction: column; align-items: center; gap: 14px">
-<div style="width: 100%; max-width: 270px; border-radius: 34px; background: #17162B; padding: 9px; box-shadow: 0 28px 50px -30px rgba(23,22,43,0.55)">
-<img src="img/loja-beleza.jpg" alt="Site de exemplo da loja Flor de Cacau" style="display: block; width: 100%; height: auto; border-radius: 26px">
-</div>
-<figcaption style="display: flex; flex-direction: column; align-items: center; gap: 2px">
-<span style="font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5B5A70">Beleza</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 20px; font-weight: 700">Flor de Cacau</span>
-</figcaption>
-</figure>
-<figure style="margin: 0; display: flex; flex-direction: column; align-items: center; gap: 14px">
-<div style="width: 100%; max-width: 270px; border-radius: 34px; background: #17162B; padding: 9px; box-shadow: 0 28px 50px -30px rgba(23,22,43,0.55)">
-<img src="img/loja-doces.jpg" alt="Site de exemplo da loja Doce Quintal" style="display: block; width: 100%; height: auto; border-radius: 26px">
-</div>
-<figcaption style="display: flex; flex-direction: column; align-items: center; gap: 2px">
-<span style="font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5B5A70">Doces</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 20px; font-weight: 700">Doce Quintal</span>
-</figcaption>
-</figure>
-<figure style="margin: 0; display: flex; flex-direction: column; align-items: center; gap: 14px">
-<div style="width: 100%; max-width: 270px; border-radius: 34px; background: #17162B; padding: 9px; box-shadow: 0 28px 50px -30px rgba(23,22,43,0.55)">
-<img src="img/loja-acessorios.jpg" alt="Site de exemplo da loja Brilho de Ouro" style="display: block; width: 100%; height: auto; border-radius: 26px">
-</div>
-<figcaption style="display: flex; flex-direction: column; align-items: center; gap: 2px">
-<span style="font-family: 'DM Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #5B5A70">Acessórios</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 20px; font-weight: 700">Brilho de Ouro</span>
-</figcaption>
-</figure>
-</div>
-<p style="margin: 0; font-size: 14px; color: #5B5A70; text-align: center">Lojas de exemplo. As ilustrações dão lugar às fotos reais dos seus produtos.</p>
-<a href="https://loja-teste-catalogandoweb.pages.dev/" target="_blank" rel="noopener" style="align-self: center; display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: 999px; background: #3A3AF0; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px">Testar uma loja funcionando<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"></path></svg></a>
-</section>
+  // Link pode vir com o nome ou o @ preenchido: /briefing/?loja=Atelie&insta=atelie
+  var q = new URLSearchParams(location.search);
+  if (q.get("loja")) form.loja.value = q.get("loja");
+  if (q.get("insta")) form.instagram.value = "@" + q.get("insta").replace(/^@/, "");
 
-<section style="background: #17162B; color: #FFFFFF">
-<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
-<span style="font-family: 'DM Mono', monospace; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #B9B8D0">Como funciona</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; letter-spacing: -0.02em">Você vê funcionando antes de decidir.</h2>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px">
-<div style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid #3A3955; padding-top: 20px">
-<span style="font-family: 'DM Mono', monospace; font-size: 14px; color: #A9A8FF">1</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px; font-weight: 700">Uma conversa rápida</h3>
-<p style="margin: 0; color: #CFCEE0; font-size: 16px">Pelo WhatsApp ou e-mail, você conta o que vende e como atende hoje.</p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid #3A3955; padding-top: 20px">
-<span style="font-family: 'DM Mono', monospace; font-size: 14px; color: #A9A8FF">2</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px; font-weight: 700">Prévia grátis</h3>
-<p style="margin: 0; color: #CFCEE0; font-size: 16px">Montamos uma versão com os seus produtos e enviamos o link para você testar no celular.</p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid #3A3955; padding-top: 20px">
-<span style="font-family: 'DM Mono', monospace; font-size: 14px; color: #A9A8FF">3</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px; font-weight: 700">No ar</h3>
-<p style="margin: 0; color: #CFCEE0; font-size: 16px">Fazemos os ajustes, o site entra no ar em até 7 dias e o link vai para a sua bio.</p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid #3A3955; padding-top: 20px">
-<span style="font-family: 'DM Mono', monospace; font-size: 14px; color: #A9A8FF">4</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px; font-weight: 700">7 dias grátis</h3>
-<p style="margin: 0; color: #CFCEE0; font-size: 16px">Use o site vendendo de verdade por 7 dias, sem pagar nada. Aprovou? Aí sim você escolhe o plano e paga.</p>
-</div>
-</div>
-</div>
-</section>
+  // Rascunho: se a pessoa sair no meio, volta de onde parou (só neste celular).
+  try {
+    var r = JSON.parse(localStorage.getItem(RASCUNHO) || "null");
+    if (r) {
+      Object.keys(r.campos || {}).forEach(function (k) { if (form[k] && !form[k].value) form[k].value = r.campos[k]; });
+      (r.marcados || []).forEach(function (v) {
+        var el = form.querySelector('input[value="' + v.replace(/"/g, '\\"') + '"]');
+        if (el) el.checked = true;
+      });
+    }
+  } catch (e) { /* sem rascunho */ }
+  function salvarRascunho() {
+    try {
+      var campos = {};
+      ["loja", "whatsapp", "instagram", "campeas", "frete_gratis", "duvidas", "observacoes"].forEach(function (k) { campos[k] = form[k].value; });
+      var marcados = [].map.call(form.querySelectorAll(".chips input:checked"), function (i) { return i.value; });
+      localStorage.setItem(RASCUNHO, JSON.stringify({ campos: campos, marcados: marcados }));
+    } catch (e) { /* sem armazenamento */ }
+  }
+  form.addEventListener("input", salvarRascunho);
+  form.addEventListener("change", salvarRascunho);
 
-<section id="planos" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
-<span style="font-family: 'DM Mono', monospace; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: #5B5A70">Planos</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; letter-spacing: -0.02em">Escolha como prefere pagar.</h2>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px">
-<div style="background: #FFFFFF; border: 1px solid #DCDAE8; border-radius: 24px; padding: 36px; display: flex; flex-direction: column; gap: 20px">
-<div style="display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 26px; font-weight: 700">Essencial</h3>
-<p style="margin: 0; color: #4B4A63; font-size: 16px">Seu site com painel, por um valor mensal baixo. Você mesmo atualiza.</p>
-</div>
-<div style="display: flex; gap: 14px; align-items: center; background: #E7F5EC; border: 1.5px solid #1F8A4C; border-radius: 16px; padding: 14px 16px">
-<span style="flex: none; width: 40px; height: 40px; border-radius: 999px; background: #1F8A4C; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>
-<span style="display: flex; flex-direction: column; gap: 2px; min-width: 0"><strong style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 20px; color: #145C33; line-height: 1.15">7 dias grátis para testar</strong><span style="font-size: 14px; color: #2E5A40; line-height: 1.35">Use o site vendendo de verdade. Só paga a entrada se aprovar.</span></span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 2px">
-<span style="align-self: flex-start; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: #FDE7DF; color: #A6361A; margin-bottom: 6px">Condição especial até 30/11</span>
-<span style="font-size: 15px; color: #5B5A70">entrada de <s>R$ 799</s> por <strong style="color: #17162B">R$ 599</strong> +</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 48px; letter-spacing: -0.02em; line-height: 1">R$ 49<span style="font-size: 22px; font-weight: 600">/mês</span></span>
-<span style="font-size: 14px; color: #5B5A70">com IA e e-mails: R$ 199/mês*</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; font-size: 16px">
-<span style="display: flex; gap: 10px"><span style="color: #1F8A4C; font-weight: 700">✓</span>Catálogo completo com seus produtos</span>
-<span style="display: flex; gap: 10px"><span style="color: #1F8A4C; font-weight: 700">✓</span>Pedido direto no WhatsApp</span>
-<span style="display: flex; gap: 10px"><span style="color: #1F8A4C; font-weight: 700">✓</span>Hospedagem e domínio inclusos (seu endereço próprio, que custa cerca de R$ 40 por ano: a gente paga)</span>
-<span style="display: flex; gap: 10px"><span style="color: #1F8A4C; font-weight: 700">✓</span>Painel para você atualizar produtos, preços e estoque sozinho</span>
-<span style="display: flex; gap: 10px"><span style="color: #1F8A4C; font-weight: 700">✓</span>Suporte para problemas técnicos, com resposta em até 24h</span>
-<span style="display: flex; gap: 10px; color: #5B5A70"><span style="font-weight: 700">–</span>Alterações feitas pela nossa equipe, como cadastro de produtos, novas seções ou mudanças de layout: a partir de R$ 79,90 cada</span>
-</div>
-</div>
-<div style="background: #FFFFFF; border: 2px solid #3A3AF0; border-radius: 24px; padding: 36px; display: flex; flex-direction: column; gap: 20px">
-<div style="display: flex; flex-direction: column; gap: 6px">
-<div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center">
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 26px; font-weight: 700">Completo</h3>
-<span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #3A3AF0; color: #FFFFFF">Recomendado</span>
-</div>
-<p style="margin: 0; color: #4B4A63; font-size: 16px">A Catalogando Web cuida do site para você, todo mês.</p>
-</div>
-<div style="display: flex; gap: 14px; align-items: center; background: #E7F5EC; border: 1.5px solid #1F8A4C; border-radius: 16px; padding: 14px 16px">
-<span style="flex: none; width: 40px; height: 40px; border-radius: 999px; background: #1F8A4C; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>
-<span style="display: flex; flex-direction: column; gap: 2px; min-width: 0"><strong style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 20px; color: #145C33; line-height: 1.15">7 dias grátis para testar</strong><span style="font-size: 14px; color: #2E5A40; line-height: 1.35">Use o site vendendo de verdade. Só paga a entrada se aprovar.</span></span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 2px">
-<span style="align-self: flex-start; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: #FDE7DF; color: #A6361A; margin-bottom: 6px">Condição especial até 30/11</span>
-<span style="font-size: 15px; color: #5B5A70">entrada de <s>R$ 599</s> por <strong style="color: #17162B">R$ 299</strong> +</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 48px; letter-spacing: -0.02em; line-height: 1">R$ 149<span style="font-size: 22px; font-weight: 600">/mês</span></span>
-<span style="font-size: 14px; color: #5B5A70">com IA e e-mails: R$ 299/mês*</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; font-size: 16px">
-<span style="display: flex; gap: 10px"><span style="color: #1F8A4C; font-weight: 700">✓</span>Tudo do Essencial</span>
-<span style="display: flex; gap: 10px"><span style="color: #1F8A4C; font-weight: 700">✓</span>Até 7 pedidos de alteração por mês feitos pela nossa equipe (produtos, preços e fotos), prontos em até 2 dias úteis</span>
-<span style="display: flex; gap: 10px"><span style="color: #1F8A4C; font-weight: 700">✓</span>Relatório mensal de visitas e cliques</span>
-<span style="display: flex; gap: 10px"><span style="color: #1F8A4C; font-weight: 700">✓</span>Suporte sempre incluso</span>
-<span style="display: flex; gap: 10px; color: #5B5A70"><span style="font-weight: 700">–</span>Pedidos além de 7 no mês são combinados à parte</span>
-</div>
-</div>
-</div>
-<div style="background: #ECEBFF; border-radius: 20px; padding: 28px; display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between">
-<div style="display: flex; flex-direction: column; gap: 6px; min-width: 0; flex: 1 1 420px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; line-height: 1.15">Começou no Essencial? Mude para o Completo quando quiser.</span>
-<span style="color: #3F3E57; font-size: 16px">Além do painel, você passa a ter até 7 alterações por mês feitas pela nossa equipe e o relatório mensal, por R$ 149/mês, sem pagar entrada de novo.</span>
-</div>
-<a href="https://wa.me/5571988681966?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20plano%20Completo%20da%20Catalogando%20Web." style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #17162B; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px">Quero o plano Completo</a>
-</div>
-<div style="background: #E7F5EC; border: 1.5px solid #1F8A4C; border-radius: 20px; padding: 24px 28px; display: flex; flex-wrap: wrap; gap: 14px 20px; align-items: center">
-<span style="flex: none; width: 52px; height: 52px; border-radius: 999px; background: #1F8A4C; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7z"></path></svg></span>
-<div style="display: flex; flex-direction: column; gap: 4px; min-width: 0; flex: 1 1 360px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px; color: #145C33">Indique e ganhe 1 mês grátis</span>
-<span style="font-size: 16px; color: #2E5A40">Para cada loja que você indicar e que fechar um plano, você ganha 1 mês de mensalidade grátis. Sem limite.</span>
-</div>
-</div>
-<p style="margin: 0; max-width: 46em; font-size: 15px; color: #5B5A70">* Com IA e e-mails: um assistente com IA no site responde as dúvidas mais comuns dos seus clientes (tamanhos, estoque, entrega, pagamento) e leva para o WhatsApp da loja quando é hora de fechar a compra. E você recebe por e-mail um aviso a cada pedido novo, um lembrete antes de um pedido expirar e um resumo semanal de visitas e vendas. Esses valores cobrem o atendimento automático padrão. Funcionalidades de IA sob medida ou um volume de uso maior podem ter valor diferente, combinado com você antes de qualquer mudança.</p>
-</section>
+  // No máximo 3 estilos
+  form.addEventListener("change", function (e) {
+    var g = e.target.closest(".chips[data-max]");
+    if (!g) return;
+    var max = +g.dataset.max;
+    var on = g.querySelectorAll("input:checked");
+    if (on.length > max) e.target.checked = false;
+  });
 
-<section style="background: #FFFFFF; border-top: 1px solid #ECEBF2">
-<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px">
-<div style="flex: 1 1 300px; min-width: 0">
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; letter-spacing: -0.02em">Perguntas frequentes</h2>
-</div>
-<div style="flex: 2 1 520px; min-width: 0; display: flex; flex-direction: column">
-<div style="padding: 20px 0; border-bottom: 1px solid #ECEBF2; display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 18px; font-weight: 600">Eu continuo vendendo pelo WhatsApp?</h3>
-<p style="margin: 0; color: #4B4A63; font-size: 16px">Sim. O site organiza a vitrine e manda o pedido pronto para o seu WhatsApp. O jeito de fechar a venda continua o seu.</p>
-</div>
-<div style="padding: 20px 0; border-bottom: 1px solid #ECEBF2; display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 18px; font-weight: 600">Preciso entender de tecnologia?</h3>
-<p style="margin: 0; color: #4B4A63; font-size: 16px">Não. Você atualiza tudo por um painel simples, pelo celular. No plano Completo, se preferir, é só mandar o produto novo pelo WhatsApp que a nossa equipe coloca no site.</p>
-</div>
-<div style="padding: 20px 0; display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 18px; font-weight: 600">Posso testar antes de pagar?</h3>
-<p style="margin: 0; color: #4B4A63; font-size: 16px">Pode. A prévia é grátis e, depois que o site entra no ar, você usa por 7 dias sem pagar nada. Se não aprovar, não paga.</p>
-</div>
-<div style="padding: 20px 0; display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 18px; font-weight: 600">Posso cancelar a mensalidade?</h3>
-<p style="margin: 0; color: #4B4A63; font-size: 16px">Pode, quando quiser, sem multa e sem fidelidade. O site e o painel ficam no ar até o fim do mês já pago. O domínio fica no nome da sua loja, então ele continua seu.</p>
-</div>
-<div style="padding: 20px 0; display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 18px; font-weight: 600">Como funciona a indicação?</h3>
-<p style="margin: 0; color: #4B4A63; font-size: 16px">Indique a Catalogando Web para outra loja. Quando ela fechar um plano e pagar a entrada, você ganha 1 mês de mensalidade grátis. Indicou três que fecharam? São três meses sem pagar.</p>
-</div>
-</div>
-</div>
-</section>
+  // Nome do arquivo escolhido
+  form.querySelectorAll('input[type=file]').forEach(function (inp) {
+    inp.addEventListener("change", function () {
+      var f = inp.files[0];
+      var alvo = form.querySelector('[data-nome-de="' + inp.name + '"]');
+      if (f && f.size > 8 * 1024 * 1024) { alvo.textContent = "Arquivo grande demais (máx. 8 MB)."; inp.value = ""; return; }
+      alvo.textContent = f ? "✓ " + f.name : "";
+    });
+  });
 
-<section id="contato" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 112px">
-<div class="cw-contato" style="background: #3A3AF0; color: #FFFFFF; border-radius: 32px; padding: 56px 40px; display: flex; flex-direction: column; gap: 20px; align-items: flex-start">
-<h2 style="margin: 0; max-width: 16em; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4.5vw, 56px); line-height: 1.04; letter-spacing: -0.025em">Quer ver a sua loja num site? Fale com a gente.</h2>
-<p style="margin: 0; font-size: 19px; max-width: 32em; color: #E8E8FF">Envie o @ da sua loja e a Catalogando Web monta uma prévia com os seus produtos.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px">
-<a href="https://wa.me/5571988681966?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Catalogando%20Web%20e%20quero%20uma%20pr%C3%A9via%20gr%C3%A1tis%20da%20minha%20loja." style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 999px; background: #FFFFFF; color: #17162B; text-decoration: none; font-weight: 600; font-size: 17px">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1F8A4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.2-4.6A9 9 0 1 1 21 12z"></path></svg>
-WhatsApp (71) 98868-1966</a>
-<a class="cw-mail" href="mailto:catalogandoweb@gmail.com?subject=Quero%20uma%20pr%C3%A9via%20da%20minha%20loja" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 999px; background: transparent; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px; border: 1.5px solid rgba(255,255,255,.7)">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
-catalogandoweb@gmail.com</a>
-</div>
-</div>
-<p style="margin: 24px 0 0; font-size: 14px; color: #5B5A70">Catalogando Web · Atendimento online para todo o Brasil · catalogandoweb@gmail.com</p>
-</section>
+  function mostrar(n) {
+    passo = n;
+    form.querySelectorAll("[data-passo]").forEach(function (s) { s.hidden = +s.dataset.passo !== n; });
+    document.querySelectorAll(".progresso span").forEach(function (s, i) { s.classList.toggle("on", i < n); });
+    $("passo-rotulo").textContent = "Passo " + n + " de " + TOTAL;
+    // O título e a explicação só aparecem no primeiro passo
+    document.querySelector("#cabecalho h1").hidden = n > 1;
+    document.querySelector("#cabecalho .lead").hidden = n > 1;
+    $("voltar").hidden = n === 1;
+    $("seguir").textContent = n === TOTAL ? "Enviar" : "Continuar";
+    $("erro").hidden = true;
+    window.scrollTo(0, 0);
+  }
 
-</div>
+  function erro(t) { $("erro").textContent = t; $("erro").hidden = false; }
 
+  function validarPasso1() {
+    var ok = true;
+    $("c-loja").classList.toggle("invalido", !form.loja.value.trim());
+    $("c-whats").classList.toggle("invalido", form.whatsapp.value.replace(/\D/g, "").length < 10);
+    if (!form.loja.value.trim()) ok = false;
+    if (form.whatsapp.value.replace(/\D/g, "").length < 10) ok = false;
+    if (!ok) erro("Preencha o nome da loja e o WhatsApp com DDD.");
+    return ok;
+  }
 
+  function marcados(nome) {
+    return [].map.call(form.querySelectorAll('.chips[data-nome="' + nome + '"] input:checked'), function (i) { return i.value; }).join(", ");
+  }
+
+  async function enviarArquivo(inp) {
+    var f = inp.files[0];
+    if (!f) return "";
+    var ext = (f.name.split(".").pop() || "jpg").toLowerCase().replace(/[^a-z0-9]/g, "").slice(0, 5);
+    var nome = "novos/" + Date.now() + "-" + Math.random().toString(36).slice(2, 8) + "-" + inp.name + "." + ext;
+    var r = await fetch(SB.url + "/storage/v1/object/briefings/" + nome, {
+      method: "POST",
+      headers: { apikey: SB.chave, Authorization: "Bearer " + SB.chave, "Content-Type": f.type || "application/octet-stream", "x-upsert": "false" },
+      body: f
+    });
+    if (!r.ok) throw new Error("arquivo");
+    return nome;
+  }
+
+  async function enviar() {
+    var b = $("seguir");
+    b.disabled = true;
+    b.textContent = "Enviando…";
+    var logo = "", tabela = "", avisoArquivo = false;
+    try { logo = await enviarArquivo(form.logo); } catch (e) { avisoArquivo = true; }
+    try { tabela = await enviarArquivo(form.tabela_medidas); } catch (e) { avisoArquivo = true; }
+    var dados = {
+      loja: form.loja.value.trim(),
+      whatsapp: form.whatsapp.value.trim(),
+      instagram: form.instagram.value.trim(),
+      estilo: marcados("estilo"),
+      tamanhos: marcados("tamanhos"),
+      campeas: form.campeas.value.trim(),
+      fotos: marcados("fotos"),
+      entrega: marcados("entrega"),
+      frete_gratis: form.frete_gratis.value.trim(),
+      pagamento: marcados("pagamento"),
+      trocas: marcados("trocas"),
+      duvidas: form.duvidas.value.trim(),
+      observacoes: (form.observacoes.value.trim() + (avisoArquivo ? " [Um arquivo não foi enviado: pedir no WhatsApp]" : "")).trim(),
+      logo: logo,
+      tabela_medidas: tabela
+    };
+    try {
+      var r = await fetch(SB.url + "/rest/v1/rpc/enviar_briefing", {
+        method: "POST",
+        headers: { apikey: SB.chave, "Content-Type": "application/json" },
+        body: JSON.stringify({ p: dados })
+      });
+      if (!r.ok) throw new Error("envio");
+      try { localStorage.removeItem(RASCUNHO); } catch (e) { /* nada */ }
+      var txt = "Oi! Acabei de preencher o formulário do site da " + dados.loja + ".";
+      $("avisar").href = "https://wa.me/" + WHATS_CATALOGANDO + "?text=" + encodeURIComponent(txt);
+      form.hidden = true;
+      $("rodape").hidden = true;
+      $("fim").hidden = false;
+      window.scrollTo(0, 0);
+    } catch (e) {
+      erro("Não conseguimos enviar agora. Confira a internet e toque em Enviar de novo. Suas respostas continuam aqui.");
+      b.disabled = false;
+      b.textContent = "Enviar";
+    }
+  }
+
+  $("seguir").addEventListener("click", function () {
+    if (passo === 1 && !validarPasso1()) return;
+    if (passo < TOTAL) mostrar(passo + 1); else enviar();
+  });
+  $("voltar").addEventListener("click", function () { mostrar(passo - 1); });
+  form.addEventListener("submit", function (e) { e.preventDefault(); });
+  mostrar(1);
+})();
+</script>
 </body>
 </html>
